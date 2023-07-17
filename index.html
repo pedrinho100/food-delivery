@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section>
+        <header>
+            <h1 class="title">DrivenEats</h1>
+            <p class="subtitle">Your food in 6 minutes</p>
+        </header>
+        <main class="container">
+            <div class="container-title">
+                <h2>First, your pizza</h2>
+            </div>
+            <div class="options pizza">
+                <div class="pizza option" onclick="foodSelected(this)">
+                    <div>
+                    <img src="img/pizza de mussarela.jpg" alt="Mozzarella pizza">
+                    </div>
+                    <h3 class="name">Mozzarella Pizza</h3>
+                    <p class="description">Seasoned with <br>oregano and basil</p>
+                    <p class="price">$ 20,50</p>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pizza option" onclick="foodSelected(this)">
+                    <div>
+                    <img src="img/pizza de carne seca.jpeg" alt="meat pizza">
+                    </div>
+                    <h3 class="name">Dried beef Pizza</h3>
+                    <p class="description">Dried beed and Mozzarella cheese</p>
+                    <div class="price">$ 20,50</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pizza option" onclick="foodSelected(this)">
+                    <div>
+                    <img src="img/pizza de frango e catupry.jpg" alt="chicken pizza">
+                    </div>
+                    <h3 class="name">Chicken Pizza</h3>
+                    <p class="description">chicken and cream cheese</p>
+                    <div class="price">$ 20,50</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pizza option" onclick="foodSelected(this)">
+                    <div>
+                    <img src="img/pizza de 4 queijos.webp" alt="4 cheese">
+                    </div>
+                    <h3 class="name">4 cheese pizza</h3>
+                    <p class="description">Ricotta, parmesan,<br>Mozzarella,gorgonzola</p>
+                    <div class="price">$ 20,50</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="container-title">
+                <h2>Now, your drink</h2>
+            </div>
+            <div class="options drink">
+                <div class="drink option" onclick="drinkSelected(this)">
+                    <div>
+                    <img src="img/coca-cola.jpg" alt="coke">
+                    </div>
+                    <h3 class="name">Coke</h3>
+                    <div class="price">$ 2,00</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="drink option" onclick="drinkSelected(this)">
+                    <div>
+                    <img src="img/guarana-antarctica.jpg" alt="guarana">
+                    </div>
+                    <h3 class="name">Guaraná Antarctica</h3>
+                    <div class="price">$ 2,00</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="drink option" onclick="drinkSelected(this)">
+                    <div>
+                    <img src="img/suco de acerola.jpg" alt="acerola">
+                    </div>
+                    <h3 class="name">Acerola juice</h3>
+                    <div class="price">$ 2,00</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="drink option" onclick="drinkSelected(this)">
+                    <div>
+                    <img src="img/suco de laranja.jpg" alt="orange juice">
+                    </div>
+                    <h3 class="name">Orange Juice</h3>
+                    <div class="price">$ 2,00</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="container-title">
+                <h2>Finally, your dessert</h2>
+            </div>
+            <div class="options dessert">
+                <div class="dessert option" onclick="dessertSelected(this)">
+                    <div>
+                    <img src="img/petitgateau.jpg" alt="petitgateau">
+                    </div>
+                    <h3 class="name">Petitgateau</h3>
+                    <p class="description">Chocolate petitgateau and vanilla ice cream</p>
+                    <div class="price">$ 5,00</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="dessert option" onclick="dessertSelected(this)">
+                    <div>
+                    <img src="img/pudim.jpg" alt="pudim">
+                    </div>
+                    <h3 class="name">Pudim</h3>
+                    <p class="description">Delicious brazilian dessert</p>
+                    <div class="price">$ 5,00</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="dessert option" onclick="dessertSelected(this)">
+                    <div>
+                    <img src="img/torta de limão.jpg" alt="lemon pie">
+                    </div>
+                    <h3 class="name">Lemon pie</h3>
+                    <p class="description">Lemon and vanilla</p>
+                    <div class="price">$ 5,00</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="dessert option" onclick="dessertSelected(this)">
+                    <div>
+                    <img src="img/churros.jpg" alt="churros">
+                    </div>
+                    <h3 class="name">Churros</h3>
+                    <p class="description">Spanish dessert with nutella</p>
+                    <div class="price">$ 5,00</div>
+                    <ion-icon class="checkmark check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="background display-none">
+                <div class="confirmation-background">
+                    <div class="pop-up-confirmation">
+                        <div class="confirmation-description">
+                            <div class="order">
+                                <div class="pizza-confirmation">Frango</div>
+                                <div class="pizza-price">$4,20</div>
+                            </div>
+                            <div class="order">
+                                <div class="drink-confirmation">Frango</div>
+                                <div class="drink-price">$4,20</div>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <div class="dessert-confirmation">Frango</div>
+                            <div class="dessert-price">$4,20</div>
+                        </div>
+                        <div class="total-order">
+                            <div class="total">Total</div>
+                            <div class="amount">$4,20</div>
+                        </div>
+                        <div class="end">
+                            <div class="confirmation" onclick="finalConfirmation()">All right, you can order!</div>
+                            <div class="cancel" onclick="finalClose()">Cancel</div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <footer>
+                <button class="button-fixed" onclick="closeOrder(this)">Select 3 options to close the order</button>
+            </footer>
+        </main>
+    </section>    
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
